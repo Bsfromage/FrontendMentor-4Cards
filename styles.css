@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    background-color: #fafafa;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #a3a5ae;
+}
+
+body {
+    display: table;
+    width: 100%;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header {
+    margin: auto;
+    width: 28%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    color: #4c4e61;
+}
+
+h3 {
+    padding: 10px 30px 0;
+    font-weight: 600;
+    color: #4c4e61;
+}
+
+img {
+    position: absolute;
+    margin: 30px;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+}
+
+.card p {
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.cards {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-rows: 120px 120px 120px 120px;
+    gap: 20px 20px;
+    text-align: left;
+}
+
+.card {
+    border-top-style: solid;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.img-container {
+    position: relative;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+}
+
+#card-top {
+    border-top-color: #ea5353;
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+#card-left {
+    border-top-color: #45d3d3;
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+#card-right {
+    border-top-color: #549EF2;
+    grid-area: 2 / 3 / 4 / 4;
+}
+
+#card-bottom {
+    border-top-color: #fc914a;
+    grid-area: 3 / 2 / 5 / 3;
+}
